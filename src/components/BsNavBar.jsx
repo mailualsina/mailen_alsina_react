@@ -1,6 +1,7 @@
 import React from 'react';
+import {Navbar, Nav, Container} from 'react-bootstrap';
+import CardWidget from './CardWidget';
 
-import {Navbar, Nav, Container} from 'react-bootstrap'
 
 function BsNavBar() {
 
@@ -15,6 +16,7 @@ function BsNavBar() {
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#features">Features</Nav.Link>
                 <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <CardWidget />
                 </Nav>
                 </Container>
             </Navbar>
