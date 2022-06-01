@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import BsNavBar from './components/BsNavBar';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import ItemListContainer from './components/ItemListContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -11,6 +12,7 @@ function App() {
       
       <>
            <BsNavBar />
+           <ItemListContainer greeting = {'Hola'}/>
       </>
 
     );
