@@ -19,7 +19,7 @@ function App() {
       
       <>
            <BsNavBar />
-           <ItemListContainer greeting = {'Hola'}/>
+           {/* <ItemListContainer greeting = {'Hola'}/> */}
            <ItemCount inicial={1} max={10} onAdd={onAdd}/>
       </> 
 

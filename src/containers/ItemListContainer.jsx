@@ -1,22 +1,20 @@
 import React from 'react'
 
-function ItemListContainer({ greeting }) {
-    const[ , ] = usestate([]);
+// function ItemListContainer({ greeting }) {
+//     const[ , ] = usestate([]);
 
-    useEffect(() => {
-        fetch()
+//     useEffect(() => {
+//         fetch()
        
-        .then()
+//         .then()
 
-        .catch()
+//         .catch()
 
-        .finally()
+//     return (
+//         <div>
+//             { greeting }
+//         </div>
+//     )
+// }
 
-    return (
-        <div>
-            { greeting }
-        </div>
-    )
-}
-
-export default ItemListContainer;
+// export default ItemListContainer;

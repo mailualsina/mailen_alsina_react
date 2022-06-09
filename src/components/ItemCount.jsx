@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const ItemCount = ({inicial, max, onAdd}) => {
 
-    const[count, setCount] = useState()
+    const[count, setCount] = useState(inicial)
 
     const sumar = () => {
 
@@ -19,7 +19,7 @@ const ItemCount = ({inicial, max, onAdd}) => {
 
     const restar = () => {
 
-        if (count < inicial) {
+        if (count > inicial) {
 
             setCount(count - 1)
 
@@ -37,6 +37,8 @@ const ItemCount = ({inicial, max, onAdd}) => {
                 <button onClick={sumar}>+</button>
                 <button onClick={restar}>-</button>
                 <button onClick={() => onAdd(count)}>Agregar al carrito</button>
+
+                
             </div>
         )
 }
