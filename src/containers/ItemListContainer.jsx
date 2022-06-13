@@ -1,20 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import ItemList from '../components/ItemList'
 
-// function ItemListContainer({ greeting }) {
-//     const[ , ] = usestate([]);
+function ItemListContainer({ }) {
+    const[ users, setUsers ] = useState([]);
 
-//     useEffect(() => {
-//         fetch()
-       
-//         .then()
+    useEffect(() => {
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then(respuesta => respuesta.json())
+            .then(respuesta => setUsers(respuesta))
+            .catch(error => console.error("Error: ", error))
 
-//         .catch()
+    },[])
 
-//     return (
-//         <div>
-//             { greeting }
-//         </div>
-//     )
-// }
+    console.log(users)
+            
+    return (
+        <div>
 
-// export default ItemListContainer;
+            <ItemList users={users}/>
+
+        </div>
+    )
+    
+}
+
+export default ItemListContainer
