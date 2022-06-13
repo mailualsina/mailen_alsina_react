@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ItemList from '../components/ItemList'
 
-function ItemListContainer({ }) {
+function ItemListContainer({}) {
     const[ users, setUsers ] = useState([]);
 
     useEffect(() => {
